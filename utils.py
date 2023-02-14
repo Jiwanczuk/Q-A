@@ -26,7 +26,15 @@ def parse_pdf(file):
     for page in pdf.pages:
         text = page.extract_text()
         output.append(text)
+        
 
+    return "\n\n".join(output)
+
+def parse_txt(file):
+    with open(file, 'r') as f:
+        text = f.read()
+        
+        
     return "\n\n".join(output)
 
 def embed_text(text):
