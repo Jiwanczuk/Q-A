@@ -1,5 +1,6 @@
 import streamlit as st
-from utils import parse_file, embed_text, get_answer
+from utils import parse_pdf, embed_text, get_answer
+
 from sidebar import sidebar
 
 sidebar()
